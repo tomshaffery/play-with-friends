@@ -1,0 +1,1 @@
+FLASK_APP=play-with-friends.py
