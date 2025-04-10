@@ -11,8 +11,9 @@
   </head>
   <body>
     <div>
-      Play With Friends - <a href="{{ url_for('/index.html') }}">Index</a>
-      <a href="{{ url_for('search.html') }}">Search</a>
+      Play With Friends -
+      <a href="{{ url_for('index') }}">Index</a>
+      <a href="{{ url_for('search') }}">Search</a>
     </div>
     <hr />
     {% block content %} {% endblock %}
