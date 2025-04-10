@@ -4,7 +4,10 @@
   {{ form.hidden_tag() }}
   <p>
     {{ form.friend.label }}<br />
-    {{ form.friend(size=32) }}
+    {{ form.friend(size=32) }}<br />
+    {% for error in form.friend.errors %}
+    <span style="color: red">[{{ error }}]</span>
+    {% endfor %}
   </p>
   {{ form.submit() }}<br />
 </form>
