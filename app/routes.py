@@ -11,7 +11,6 @@ def index():
 def search():
    form = SearchForm()
    if form.validate_on_submit():
-      flash('Search commencing.')
       return redirect(url_for('results'))
    return render_template('search.html', title='Find New Games', form=form)
 
