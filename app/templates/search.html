@@ -3,6 +3,12 @@
 <form action="" method="post" novalidate>
   {{ form.hidden_tag() }}
   <p>
+    {{ form.user.label }}<br />
+    {{ form.user(size=32) }}<br />
+    {% for error in form.user.errors %}
+    <span style="color: red">[{{ error }}]</span>
+  </p>
+  <p>
     {{ form.friend.label }}<br />
     {{ form.friend(size=32) }}<br />
     {% for error in form.friend.errors %}
